@@ -7,23 +7,32 @@
 
     <!-- Primary Meta Tags -->
     <title>Peaked - daily mindfulness</title>
-    <meta name="title" content="Peaked - daily mindfulness">
-    <meta name="description" content="Capture & reflect on a special moment each day with the Peaked app">
-    <meta name="author" content="Nachiket Apte">
+    <meta name="title" content="Peaked - daily mindfulness" />
+    <meta
+      name="description"
+      content="Capture & reflect on a special moment each day with the Peaked app"
+    />
+    <meta name="author" content="Nachiket Apte" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://peaked.today/">
-    <meta property="og:title" content="Peaked - daily mindfulness">
-    <meta property="og:description" content="Capture & reflect on a special moment each day with the Peaked app">
-    <meta property="og:image" content="https://peaked.today/cover.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://peaked.today/" />
+    <meta property="og:title" content="Peaked - daily mindfulness" />
+    <meta
+      property="og:description"
+      content="Capture & reflect on a special moment each day with the Peaked app"
+    />
+    <meta property="og:image" content="https://peaked.today/cover.png" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://peaked.today/">
-    <meta property="twitter:title" content="Peaked - daily mindfulness">
-    <meta property="twitter:description" content="Capture & reflect on a special moment each day with the Peaked app">
-    <meta property="twitter:image" content="https://peaked.today/cover.png">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://peaked.today/" />
+    <meta property="twitter:title" content="Peaked - daily mindfulness" />
+    <meta
+      property="twitter:description"
+      content="Capture & reflect on a special moment each day with the Peaked app"
+    />
+    <meta property="twitter:image" content="https://peaked.today/cover.png" />
 
     <link
       rel="stylesheet"
@@ -37,6 +46,40 @@
     <style>
       footer p {
         font-size: 12px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .text-column,
+      .image-column {
+        padding: 15px;
+      }
+
+      .text-column {
+        flex: 1;
+      }
+
+      .image-column {
+        flex-basis: 300px;
+        max-width: 100%;
+      }
+
+      .phone-image {
+        width: 100%;
+        height: auto;
+      }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
       }
     </style>
   </head>
@@ -53,37 +96,49 @@
       </h1>
     </header>
 
-    <section>
-      <h2>🌟 Your daily dose of mindfulness!</h2>
-      <p>
-        Capture and reflect on a special moment each day. With Peaked, you'll
-        create a treasure trove of memories and cultivate gratitude, one mindful
-        moment at a time.
-        <br />
-        <br />🆓 Completely Free: No hidden costs or in-app purchases <br />🚫
-        Ad-Free: Enjoy an uninterrupted, clutter-free experience <br />📴
-        Offline-First: Access all features without internet connection <br />🔒
-        Privacy-Focused: Your data never leaves your device <br />🌐 No
-        Tracking: A safe space to focus on mindfulness and positivity
-      </p>
-    </section>
+    <div class="container">
+      <div class="image-column">
+        <img
+          src="peaked-screenshot.png"
+          alt="Peaked.today app screenshot"
+          class="phone-image"
+        />
+      </div>
+      <div class="text-column">
+        <section>
+          <h2>🌟 Daily mindfulness</h2>
+          <p>
+            Capture and reflect on a special moment each day. With Peaked,
+            you'll create a treasure trove of memories and cultivate gratitude,
+            one mindful moment at a time.
+            <br />
+            <br />🆓 Completely Free: No hidden costs or in-app purchases
+            <br />🚫 Ad-Free: Enjoy an uninterrupted, clutter-free experience
+            <br />📴 Offline-First: Access all features without internet
+            connection <br />🔒 Privacy-Focused: Your data never leaves your
+            device <br />🌐 No Tracking: A safe space to focus on mindfulness
+            and positivity
+          </p>
+        </section>
 
-    <section>
-      <h2>Get it on Google Play</h2>
-      <p>
-        <a
-          href="https://play.google.com/store/apps/details?id=today.peaked&utm_source=peaked.today&utm_campaign=landing&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-          ><img
-            width="200px"
-            alt="Get it on Google Play"
-            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-        /></a>
-      </p>
-    </section>
+        <section>
+          <h2>Available on Android</h2>
+          <p>
+            <a
+              href="https://play.google.com/store/apps/details?id=today.peaked&utm_source=peaked.today&utm_campaign=landing&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+              ><img
+                width="280px"
+                alt="Get it on Google Play"
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+            /></a>
+          </p>
+        </section>
+      </div>
+    </div>
 
     <footer>
       <p>
-        Google Play and the Google Play logo are trademarks of Google LLC. |
+        Android, Google Play and the Google Play logo are trademarks of Google LLC. |
         <a href="privacy.html">Privacy Policy</a>
       </p>
     </footer>
